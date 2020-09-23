@@ -17,7 +17,7 @@ or by using duration and convexity. This renders itself useful for stress testin
 Setup
 ------------
 
-To properly run the application, you will need a python 3 environment (prefereably 3.7) with numpy, pandas, 
+To properly run the application, you will need a python 3 environment (preferably 3.7) with numpy, pandas, 
 and matplotlib installed.
 
 
@@ -41,14 +41,14 @@ Example
 
 Under the current settings, we reprice a vanilla bond at various increments of basis point changes in the yield. For
 simplicity we instantiate the bond with the following price, face value, yield-to-maturity, coupon rate, coupon 
-frequency, and years to maturity as below:
+frequency, and years to maturity below:
 
 ```       
-Bond(price=100, face_value=100, ytm=new_ytm, coupon_rate=0.05, coupon_freq=2, years=5)
-
+Bond(price=100, face_value=100, ytm=0.04, coupon_rate=0.05, coupon_freq=2, years=5)
 ```
 
-###Results:
+Results
+-----------------
 We recalculate the bond price for basis point changes between -0.05 and +0.05. The BPV (DV01) is
 the change in bond price from a 1 basis point change in the yield, which is annotated below.
 
